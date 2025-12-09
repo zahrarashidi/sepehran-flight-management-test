@@ -1,0 +1,24 @@
+
+### 1. Test GET request (Reading Flights)
+GET http://127.0.0.1:8000/flights?page=1&per_page=5&sort_by=status&sort_order=asc
+
+### 2. Test POST request (Adding a Flight)
+POST http://127.0.0.1:8000/flights
+Content-Type: application/json
+
+{
+    "flight_number": "SP1021",
+    "origin": "THR",
+    "destination": "JED",
+    "departure_time": "2026-01-03T10:00:00",
+    "arrival_time": "2026-01-03T11:00:00",
+    "duration_minutes": 60,
+    "aircraft_type": "A330",
+    "seats_total": 180,
+    "seats_available": 150,
+    "status": "Scheduled",
+    "process_id": "P-237"
+}
+
+### 3. Test DELETE request
+DELETE http://127.0.0.1:8000/flights/3
