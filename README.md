@@ -72,17 +72,17 @@ Endpoint: `POST /flights`
 curl -X POST "[http://127.0.0.1:8000/flights](http://127.0.0.1:8000/flights)" \
      -H "Content-Type: application/json" \
      -d '{
-    "flight_number": "LH9010",
-    "origin": "FRA",
-    "destination": "ATL",
-    "departure_time": "2025-12-16 08:00:00",
-    "arrival_time": "2025-12-16 12:00:00",
-    "duration_minutes": 480,
-    "aircraft_type": "Airbus A350",
-    "seats_total": 280,
-    "seats_available": 280,
+    "flight_number": "SP1021",
+    "origin": "THR",
+    "destination": "JED",
+    "departure_time": "2026-01-03T10:00:00",
+    "arrival_time": "2026-01-03T11:00:00",
+    "duration_minutes": 60,
+    "aircraft_type": "A330",
+    "seats_total": 180,
+    "seats_available": 150,
     "status": "Scheduled",
-    "process_id": "proc_lh_atlantic"
+    "process_id": "P-237"
 }'
 ```
 ### 3. Changing/Updating a Flight (PUT) 🔄
